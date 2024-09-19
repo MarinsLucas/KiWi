@@ -1,0 +1,119 @@
+/* Estilo Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: fixed;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Principal */
+main {
+    padding: 20px;
+    padding-top: 80px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Estilo de Títulos */
+h1{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 2%;
+}
+h2{
+    color: #333;
+    text-align: center;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    padding-top: 80px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.recipe {
+    background-color: white;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    padding: 20px; /* Aumenta o espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre receitas */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
+}
+
+.recipe:hover {
+    transform: translateY(-5px); /* Efeito de leve elevação */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+.recipe h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave no texto */
+}
+
+.recipe p {
+    font-size: 14px;
+    line-height: 1.5; /* Melhor espaçamento entre linhas */
+    color: #666;
+    font-family: 'Verdana', sans-serif;
+}
+
+.recipe a {
+    text-decoration: none;
+    color: #4CAF50; /* Cor do link */
+    transition: color 0.2s ease;
+}
+
+.recipe a:hover {
+    color: #0056b3; /* Cor ao passar o mouse no link */
+}

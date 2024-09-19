@@ -1,0 +1,325 @@
+/* Estilo Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: fixed;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Principal */
+main {
+    padding: 20px;
+    padding-top: 80px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Estilo de Títulos */
+h1{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 2%;
+}
+h2{
+    color: #333;
+    text-align: center;
+}
+/* Campo de Busca */
+#search {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+#receita-nome
+{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+#recipe-description{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+/* Dropdown de Sugestões */
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 200px;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 0px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo dos Itens Selecionados */
+.selected-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.selected-item span {
+    margin-right: 8px;
+    flex-grow: 1;
+}
+
+.selected-item button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.selected-item button:hover {
+    background-color: #d32f2f;
+}
+
+#selected-items li{
+    padding: 10px;
+}
+
+.suggestion-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.left-text {
+    flex-grow: 1; /* Ocupará o espaço disponível no lado esquerdo */
+    text-align: left;
+}
+
+.right-text {
+    text-align: right;
+    color: gray;
+    white-space: nowrap; /* Impede a quebra de linha para manter o texto no canto direito */
+}
+
+/* Campos de Entrada e Dropdown */
+.item-input {
+    margin-left: 8px; 
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 60px;
+}
+
+.item-dropdown {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 10px;
+    background-color: #fff; /* Cor de fundo do dropdown */
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: #227501;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    padding-top: 80px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+#postreceita {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#postreceita:hover {
+    background-color:  #227501;
+}
+
+.author-container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 10px;  /* Espaçamento opcional, ajuste conforme necessário */
+}
+
+.author-container a {
+    font-size: 20px;  /* Tamanho da fonte para o link */
+    color: #333;  /* Cor do link */
+    text-decoration: none;  /* Remove o sublinhado */
+}
+
+.author-container a:hover {
+    text-decoration: underline;  /* Adiciona o sublinhado ao passar o mouse */
+}
+
+#like-button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#like-button:hover {
+    background-color: #ff6b81;
+}
+
+#like-count {
+    font-size: 18px;
+    margin-top: 10px;
+}
